@@ -1,0 +1,35 @@
+
+      			CS390 PYTHON
+
+      Startup sources for your PeteTwitt App using SQLLITE
+
+1. Install apache as indicated in the handout.
+
+2. Install in your home directory in data
+
+  cd
+  tar -xvf PeteTwitt.tar
+
+3. Create data base
+
+ cd PeteTwitt
+ ./CreateDatabase.py
+ ./populate.py
+ ./query.py
+
+2. To install cgi
+
+ cd ~/apache/htdocs
+ ln -s ~/PeteTwitt/cgi PeteTwitt
+ ls PeteTwitt
+
+3. In cgi/login.cgi look for the line MYLOGIN and write your login.
+
+4. To run PeteTwitt app type this in a browser.
+
+http://data.cs.purdue.edu:<port>/PeteTwitt/login.cgi
+
+Users:
+
+george@gmail.com abc123
+mary@gmail.com mary123
